@@ -1,0 +1,379 @@
+{
+  "dataset_summary": {
+    "total_samples": 2300,
+    "train_samples": 1840,
+    "test_samples": 460,
+    "class_distribution": {
+      "legitimate": 1150,
+      "phishing": 1150
+    }
+  },
+  "model_comparisons": {
+    "Random Forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": {
+        "true_negative": 230,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_positive": 230
+      },
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": {
+        "true_negative": 230,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_positive": 230
+      },
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0
+    },
+    "Logistic Regression": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": {
+        "true_negative": 230,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_positive": 230
+      },
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0
+    }
+  },
+  "generalization_benchmark": {
+    "total_samples": 14,
+    "accuracy": 1.0,
+    "recall": 1.0,
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": {
+        "true_negative": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_positive": 8
+      },
+      "false_negative_rate": 0.0,
+      "false_positive_rate": 0.0
+    },
+    "sample_evaluations": [
+      {
+        "url": "https://p-a-y-p-a-l-security.center/auth",
+        "technique": "Hyphenated brand fragmentation",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 0.7167,
+        "correct": true
+      },
+      {
+        "url": "http://185.220.101.99/chase/verify.html",
+        "technique": "Direct IP hosting bank login",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 0.725,
+        "correct": true
+      },
+      {
+        "url": "https://appleid-apple-support-recovery.cfd/login",
+        "technique": "Repetitive brand combosquat on .cfd",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 0.8667,
+        "correct": true
+      },
+      {
+        "url": "http://netflix.com.profile-update.buzz/signin",
+        "technique": "Subdomain deception on .buzz",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 1.0,
+        "correct": true
+      },
+      {
+        "url": "https://amaz0n-prime-member-renew.top/account",
+        "technique": "Homoglyph '0' on .top",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 0.8,
+        "correct": true
+      },
+      {
+        "url": "https://wellsfarg0-online-access.icu/signon",
+        "technique": "Homoglyph '0' on .icu",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 0.7889,
+        "correct": true
+      },
+      {
+        "url": "http://bit.ly/bank-security-alert-2026",
+        "technique": "Shortened URL with security keyword",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 0.6502,
+        "correct": true
+      },
+      {
+        "url": "https://xn--appl-coa.com/icloud",
+        "technique": "IDN Punycode homograph attack",
+        "ground_truth": "phishing",
+        "predicted": "phishing",
+        "risk_probability": 0.5334,
+        "correct": true
+      },
+      {
+        "url": "https://github.com/features/actions",
+        "technique": "Legitimate deep path",
+        "ground_truth": "legitimate",
+        "predicted": "legitimate",
+        "risk_probability": 0.2835,
+        "correct": true
+      },
+      {
+        "url": "https://docs.docker.com/engine/install/",
+        "technique": "Legitimate technical documentation",
+        "ground_truth": "legitimate",
+        "predicted": "legitimate",
+        "risk_probability": 0.3001,
+        "correct": true
+      },
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+        "technique": "Legitimate educational resource",
+        "ground_truth": "legitimate",
+        "predicted": "legitimate",
+        "risk_probability": 0.3667,
+        "correct": true
+      },
+      {
+        "url": "https://openai.com/research",
+        "technique": "Legitimate tech portal",
+        "ground_truth": "legitimate",
+        "predicted": "legitimate",
+        "risk_probability": 0.2835,
+        "correct": true
+      },
+      {
+        "url": "https://cloud.google.com/security",
+        "technique": "Legitimate cloud security page",
+        "ground_truth": "legitimate",
+        "predicted": "legitimate",
+        "risk_probability": 0.3168,
+        "correct": true
+      },
+      {
+        "url": "https://www.bankofamerica.com/help",
+        "technique": "Legitimate financial institution",
+        "ground_truth": "legitimate",
+        "predicted": "legitimate",
+        "risk_probability": 0.321,
+        "correct": true
+      }
+    ]
+  },
+  "feature_importances": [
+    {
+      "rank": 1,
+      "feature": "is_https",
+      "importance": 0.1561
+    },
+    {
+      "rank": 2,
+      "feature": "tld_is_risky",
+      "importance": 0.1464
+    },
+    {
+      "rank": 3,
+      "feature": "hostname_length",
+      "importance": 0.132
+    },
+    {
+      "rank": 4,
+      "feature": "is_suspicious_brand_use",
+      "importance": 0.1219
+    },
+    {
+      "rank": 5,
+      "feature": "script_count",
+      "importance": 0.1164
+    },
+    {
+      "rank": 6,
+      "feature": "has_hyphen_in_domain",
+      "importance": 0.1004
+    },
+    {
+      "rank": 7,
+      "feature": "count_dots",
+      "importance": 0.0539
+    },
+    {
+      "rank": 8,
+      "feature": "count_hyphens",
+      "importance": 0.0515
+    },
+    {
+      "rank": 9,
+      "feature": "has_suspicious_keyword",
+      "importance": 0.0401
+    },
+    {
+      "rank": 10,
+      "feature": "url_length",
+      "importance": 0.02
+    },
+    {
+      "rank": 11,
+      "feature": "suspicious_keyword_count",
+      "importance": 0.0139
+    },
+    {
+      "rank": 12,
+      "feature": "domain_length",
+      "importance": 0.0123
+    },
+    {
+      "rank": 13,
+      "feature": "brand_similarity_score",
+      "importance": 0.0112
+    },
+    {
+      "rank": 14,
+      "feature": "path_length",
+      "importance": 0.0063
+    },
+    {
+      "rank": 15,
+      "feature": "has_password_input",
+      "importance": 0.0052
+    },
+    {
+      "rank": 16,
+      "feature": "has_login_form",
+      "importance": 0.0031
+    },
+    {
+      "rank": 17,
+      "feature": "threat_feed_score",
+      "importance": 0.0024
+    },
+    {
+      "rank": 18,
+      "feature": "external_resources_ratio",
+      "importance": 0.0024
+    },
+    {
+      "rank": 19,
+      "feature": "count_digits",
+      "importance": 0.0014
+    },
+    {
+      "rank": 20,
+      "feature": "external_form_action",
+      "importance": 0.0009
+    },
+    {
+      "rank": 21,
+      "feature": "subdomain_length",
+      "importance": 0.0008
+    },
+    {
+      "rank": 22,
+      "feature": "count_slash",
+      "importance": 0.0007
+    },
+    {
+      "rank": 23,
+      "feature": "domain_entropy",
+      "importance": 0.0003
+    },
+    {
+      "rank": 24,
+      "feature": "has_ip",
+      "importance": 0.0001
+    },
+    {
+      "rank": 25,
+      "feature": "is_shortened",
+      "importance": 0.0001
+    },
+    {
+      "rank": 26,
+      "feature": "digit_ratio",
+      "importance": 0.0
+    },
+    {
+      "rank": 27,
+      "feature": "has_hidden_iframe",
+      "importance": 0.0
+    },
+    {
+      "rank": 28,
+      "feature": "double_slash_in_path",
+      "importance": 0.0
+    },
+    {
+      "rank": 29,
+      "feature": "has_punycode",
+      "importance": 0.0
+    },
+    {
+      "rank": 30,
+      "feature": "tld_in_subdomain",
+      "importance": 0.0
+    },
+    {
+      "rank": 31,
+      "feature": "count_equal",
+      "importance": 0.0
+    },
+    {
+      "rank": 32,
+      "feature": "count_underscore",
+      "importance": 0.0
+    },
+    {
+      "rank": 33,
+      "feature": "count_subdomains",
+      "importance": 0.0
+    },
+    {
+      "rank": 34,
+      "feature": "count_percent",
+      "importance": 0.0
+    },
+    {
+      "rank": 35,
+      "feature": "count_at",
+      "importance": 0.0
+    },
+    {
+      "rank": 36,
+      "feature": "count_question",
+      "importance": 0.0
+    },
+    {
+      "rank": 37,
+      "feature": "query_length",
+      "importance": 0.0
+    }
+  ]
+}
